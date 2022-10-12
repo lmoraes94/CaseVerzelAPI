@@ -1,6 +1,6 @@
 {
-  "name": "express-prisma-template",
-  "version": "2.0.4",
+  "name": "CaseVerzelAPI",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
