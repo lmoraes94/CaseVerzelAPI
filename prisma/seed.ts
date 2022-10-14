@@ -8,9 +8,9 @@ import prismaClient from "../src/database";
 
     const user = await prismaClient.user.create({
       data: {
-        name: "Leonardo de Moraes",
-        username: "leonardo.moraes",
-        email: "devleonardodemoraes@gmail.com",
+        name: "Verzel",
+        username: "admin",
+        email: "verzel@email.com",
         role: "Admin",
         password: bcrypt.hashSync(generatedPassword, 10),
       },

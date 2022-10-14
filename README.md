@@ -1,72 +1,45 @@
-# Template de Back-end
+## 🚀 Functionalities
 
-O template é direcionado a todos que desejam iniciar um back-end com algumas funcionalidades já previamente implementadas.
+- 🔒 Authentication - Security with SHA-512 algorithm.
+- 📁 Multer - Library for file upload.
+- 📙 Prisma ERD Generator - Library for DER generation (Entity-Relationship Diagram).
 
-## 🚀 Funcionalidades
+## ⚙️ installation
 
-- 👥 Usuários - Entidade de Usuários com paginação.
-- 🔒 Autenticação - Segurança com algoritmo SHA-512.
-- ✅ Yup - Biblioteca para validação.
-- 🧪 Jest - Biblioteca para testes unitários / de integração.
-- 📧 Nodemailer - Biblioteca para envio de e-mails.
-- 📁 Multer - Biblioteca para envio de arquivos.
-- 📙 Prisma ERD Generator - Biblioteca para geração de DER (Diagrama Entidade-Relacionamento).
+inside the root folder (src) create a folder called tmp > car-images and another folder called avatars, these folders will serve to store the project images
+create a file by calling .env and use the scope of .env.example to connect to the database
 
-## ⚙️ Instalação
+To install the dependencies, use one of the following commands:
 
-Para instalar as dependências, utilize um dos seguintes comandos:
-
-```bash
 - npm install
 - yarn
-```
 
-## 🪄 Uso
+To initialize the project, use one of the following commands:
 
-Para inicializar o projeto, utilize um dos seguintes comandos:
-
-```bash
 - yarn dev
 - npm run dev
-```
 
-Após inicializado, para rodar as migrations utilize um dos seguintes comandos:
+Before running the migrations commands, make the connection to the database
 
-```bash
-- yarn prisma migrate dev
-- npx prisma migrate dev
-```
+in the SECRET_KEY section of the .env, go to https://randomkeygen.com/ and copy a password from the Fort Knox Passwords category
 
-Para gerar o seed, utilize um dos seguintes comandos:
+the database used in the project is mySQL, the project contains an .env.example
+in the part corresponding to the connection with the database, the connection structure should be made as follows.
+DATABASE_URL="mysql://root:password@localhost:3306/dataBaseName"
 
-```bash
-- yarn prisma db seed
-- npx prisma db seed
-```
+To generate the DER (Entity-Relationship Diagram), use one of the following commands:
 
-Para gerar o DER (Diagrama de Entidade-Relacionamento), utilize um dos seguintes comandos:
-
-```bash
 - yarn prisma generate
 - npx prisma generate
-```
 
-Para visualizar e manipular os dados das tabelas, utilize um dos seguintes comandos:
+After initialized, to run the migrations use one of the following commands:
 
-```bash
-- yarn prisma studio
-- npx prisma studio
-```
+- yarn prisma migrate dev
+- npx prisma migrate dev
 
-Para rodar os testes, utilize um dos seguintes comandos:
+To generate the seed with ADMIN credentials, use one of the following commands:
 
-```bash
-- yarn test
-- npm run test
-```
+- yarn prisma db seed
+- npx prisma db seed
 
-## 🤝 Apoio
-
-Pull requests são bem-vindas. Para maiores mudanças, primeiro abra uma issue para discutir o que você gostaria de mudar.
-
-Por gentileza, atualize os testes apropriadamente.
+note that a password will be generated in the terminal, use the email: verzel@email.com, with the password generated in the terminal to login to the dashboard

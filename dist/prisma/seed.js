@@ -13,9 +13,9 @@ const database_1 = __importDefault(require("../src/database"));
     const generatedPassword = faker_1.faker.internet.password();
     const user = await database_1.default.user.create({
       data: {
-        name: "Leonardo de Moraes",
-        username: "leonardo.moraes",
-        email: "devleonardodemoraes@gmail.com",
+        name: "Verzel",
+        username: "admin",
+        email: "verzel@email.com",
         role: "Admin",
         password: bcrypt_1.default.hashSync(generatedPassword, 10),
       },

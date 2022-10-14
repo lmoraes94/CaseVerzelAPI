@@ -87,7 +87,7 @@ class CarService implements ICarService {
       take: +pageSize || 5,
       skip: +pageSize ? page * pageSize : 0,
       orderBy: {
-        brand: "asc",
+        price: "asc",
       },
     });
 
