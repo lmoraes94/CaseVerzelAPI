@@ -43,3 +43,5 @@ To generate the seed with ADMIN credentials, use one of the following commands:
 - npx prisma db seed
 
 note that a password will be generated in the terminal, use the email: verzel@email.com, with the password generated in the terminal to login to the dashboard
+
+If it is of interest to the developer, the project already has all the structure for testing in insomnia, just import the data from the docs folder
