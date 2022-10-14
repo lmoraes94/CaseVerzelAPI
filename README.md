@@ -1,10 +1,10 @@
-## 🚀 Functionalities
+Functionalities
 
-- 🔒 Authentication - Security with SHA-512 algorithm.
-- 📁 Multer - Library for file upload.
-- 📙 Prisma ERD Generator - Library for DER generation (Entity-Relationship Diagram).
+Authentication - Security with SHA-512 algorithm.
+Multer - Library for file upload.
+Prisma ERD Generator - Library for DER generation (Entity-Relationship Diagram).
 
-## ⚙️ installation
+Installation
 
 inside the root folder (src) create a folder called tmp > car-images and another folder called avatars, these folders will serve to store the project images
 create a file by calling .env and use the scope of .env.example to connect to the database
